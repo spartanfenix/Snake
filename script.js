@@ -121,8 +121,8 @@ const updateScore = () => {
 
 const createBoard = () => {
     boardSquares.forEach( (row, rowIndex) => {
-        row.forEach( (column, columnndex) => {
-            const squareValue = `${rowIndex}${columnndex}`;
+        row.forEach( (column, columnIndex) => {
+            const squareValue = `${rowIndex}${columnIndex}`;
             const squareElement = document.createElement('div');
             squareElement.setAttribute('class', 'square emptySquare');
             squareElement.setAttribute('id', squareValue);
